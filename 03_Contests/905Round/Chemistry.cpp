@@ -25,7 +25,10 @@ int main(void) {
             else if(odd < k){
                 even += odd;
                 for(auto x: U){
-                    if(x.second % 2) {x.second -= 1; k--; if(k == 0){break;}}
+                    if(x.second % 2) {x.second -= 1; k--; odd --; if(k == 0){break;}}
+                }
+                for(auto x: U){
+                    
                 }
             }
         }
