@@ -19,19 +19,8 @@ int main(void) {
             else even++;
         }
 
-        if(odd - 1 > k) cout << "NO\n";
-        else{
-            if(odd == k || odd - 1 == k) cout << "YES\n";
-            else if(odd < k){
-                even += odd;
-                for(auto x: U){
-                    if(x.second % 2) {x.second -= 1; k--; odd --; if(k == 0){break;}}
-                }
-                for(auto x: U){
-                    
-                }
-            }
-        }
+        if(odd <= k || odd - 1 <= k) cout << "YES\n";
+        else cout << "NO\n";
     }
     return 0;
 }
